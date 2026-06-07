@@ -48,8 +48,11 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render book (weeks 1-2 public profile)
-        run: quarto render --profile public --to html
+      - name: Activate public config (weeks 1-2 only)
+        run: cp _quarto-public.yml _quarto.yml
+
+      - name: Render book
+        run: quarto render --to html
 
       - name: Render weekly slides (weeks 1-2)
         run: |
