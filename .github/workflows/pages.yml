@@ -48,8 +48,8 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render book
-        run: quarto render --to html
+      - name: Render book (weeks 1-2 public profile)
+        run: quarto render --profile public --to html
 
       - name: Render weekly slides (weeks 1-2)
         run: |
@@ -58,7 +58,10 @@ jobs:
             [ -f "$f" ] && quarto render "$f"
           done
           mkdir -p _book/slides
-          find slides -maxdepth 1 -name "*.html" -exec cp {} _book/slides/ \;
+          for f in slides/week-01-lecture.html slides/week-01-tutorial.html \
+                   slides/week-02-lecture.html slides/week-02-tutorial.html; do
+            [ -f "$f" ] && cp "$f" _book/slides/
+          done
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
