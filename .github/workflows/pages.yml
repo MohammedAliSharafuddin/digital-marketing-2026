@@ -1,0 +1,64 @@
+name: Render and publish
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [source-updated]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      XDG_CACHE_HOME: /tmp/quarto-xdg
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+        with:
+          repository: MohammedAliSharafuddin/digital-marketing-2026-source
+          token: ${{ secrets.SOURCE_REPO_TOKEN }}
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4'
+          use-public-rspm: true
+
+      - name: Install R packages
+        shell: Rscript {0}
+        run: |
+          pkgs <- c("rmarkdown", "knitr",
+                    "DiagrammeR", "ggplot2", "dplyr",
+                    "patchwork", "bslib", "shiny", "here",
+                    "htmlwidgets", "scales")
+          install.packages(pkgs[!pkgs %in% installed.packages()[,"Package"]],
+                           repos = "https://cloud.r-project.org",
+                           quiet = TRUE)
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render book
+        run: quarto render --to html
+
+      - name: Render weekly slides (weeks 1-2)
+        run: |
+          for f in slides/week-01-lecture.qmd slides/week-01-tutorial.qmd \
+                   slides/week-02-lecture.qmd slides/week-02-tutorial.qmd; do
+            [ -f "$f" ] && quarto render "$f"
+          done
+          mkdir -p _book/slides
+          find slides -maxdepth 1 -name "*.html" -exec cp {} _book/slides/ \;
+
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: _book
+          clean: true
+          git-config-name: github-actions[bot]
+          git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
