@@ -36,7 +36,7 @@ jobs:
                      CRAN  = "https://cloud.r-project.org")
           install.packages(
             c("rmarkdown", "knitr", "shinylive",
-              "DiagrammeR", "ggplot2", "dplyr",
+              "DiagrammeR", "ggplot2", "ggforce", "dplyr",
               "patchwork", "bslib", "shiny", "here",
               "htmlwidgets", "scales"),
             repos = repos,
@@ -44,6 +44,7 @@ jobs:
           stopifnot(requireNamespace("rmarkdown", quietly = TRUE))
           stopifnot(requireNamespace("knitr",     quietly = TRUE))
           stopifnot(requireNamespace("shinylive",  quietly = TRUE))
+          stopifnot(requireNamespace("ggforce",    quietly = TRUE))
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
