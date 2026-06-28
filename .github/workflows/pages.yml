@@ -55,7 +55,7 @@ jobs:
         run: |
           for f in slides/week-01-lecture.qmd slides/week-01-tutorial.qmd \
                    slides/week-02-lecture.qmd slides/week-02-tutorial.qmd; do
-            [ -f "$f" ] && quarto render "$f"
+            if [ -f "$f" ]; then quarto render "$f"; fi
           done
 
       - name: Activate public config (weeks 1-2 only)
@@ -69,11 +69,11 @@ jobs:
           mkdir -p _book/slides
           for f in slides/week-01-lecture.html slides/week-01-tutorial.html \
                    slides/week-02-lecture.html slides/week-02-tutorial.html; do
-            [ -f "$f" ] && cp "$f" _book/slides/
+            if [ -f "$f" ]; then cp "$f" _book/slides/; fi
           done
           for d in slides/week-01-lecture_files slides/week-01-tutorial_files \
                    slides/week-02-lecture_files slides/week-02-tutorial_files; do
-            [ -d "$d" ] && cp -r "$d" _book/slides/
+            if [ -d "$d" ]; then cp -r "$d" _book/slides/; fi
           done
 
       - name: Deploy to gh-pages
