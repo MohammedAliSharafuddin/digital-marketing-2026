@@ -51,7 +51,7 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Activate public config (weeks 1-2 only)
+      - name: Activate public config
         run: cp _quarto-public.yml _quarto.yml
 
       - name: Render book
@@ -61,7 +61,8 @@ jobs:
         run: |
           mkdir -p _book/slides
           for f in slides/week-01-lecture.html slides/week-01-tutorial.html \
-                   slides/week-02-lecture.html slides/week-02-tutorial.html; do
+                   slides/week-02-lecture.html slides/week-02-tutorial.html \
+                   slides/week-03-lecture.html; do
             if [ -f "$f" ]; then cp "$f" _book/slides/; fi
           done
 
