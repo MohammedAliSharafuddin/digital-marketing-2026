@@ -55,7 +55,7 @@ jobs:
         run: |
           for f in slides/week-01-lecture.qmd slides/week-01-tutorial.qmd \
                    slides/week-02-lecture.qmd slides/week-02-tutorial.qmd; do
-            [ -f "$f" ] && quarto render "$f" -M embed-resources:true -M self-contained:true
+            [ -f "$f" ] && quarto render "$f"
           done
 
       - name: Activate public config (weeks 1-2 only)
