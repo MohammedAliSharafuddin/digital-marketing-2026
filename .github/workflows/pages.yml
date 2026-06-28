@@ -51,13 +51,6 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render weekly slides (weeks 1-2)
-        run: |
-          for f in slides/week-01-lecture.qmd slides/week-01-tutorial.qmd \
-                   slides/week-02-lecture.qmd slides/week-02-tutorial.qmd; do
-            if [ -f "$f" ]; then quarto render "$f"; fi
-          done
-
       - name: Activate public config (weeks 1-2 only)
         run: cp _quarto-public.yml _quarto.yml
 
@@ -70,10 +63,6 @@ jobs:
           for f in slides/week-01-lecture.html slides/week-01-tutorial.html \
                    slides/week-02-lecture.html slides/week-02-tutorial.html; do
             if [ -f "$f" ]; then cp "$f" _book/slides/; fi
-          done
-          for d in slides/week-01-lecture_files slides/week-01-tutorial_files \
-                   slides/week-02-lecture_files slides/week-02-tutorial_files; do
-            if [ -d "$d" ]; then cp -r "$d" _book/slides/; fi
           done
 
       - name: Deploy to gh-pages
