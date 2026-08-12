@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Week 7: Paid Search and PPC – The Evidence-Based Digital Marketer</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/week-07-tutorial.html" rel="next">
+<link href="../chapters/week-06-independent-study.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4c24cc977a0211480fc5cdfed63171cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<meta name="shinylive:serviceworker_dir" content="..">
+<script src="../site_libs/quarto-contrib/shinylive-0.10.12/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="../site_libs/quarto-contrib/shinylive-0.10.12/shinylive/run-python-blocks.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/shinylive-0.10.12/shinylive/shinylive.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../site_libs/viz-1.8.2/viz.js"></script>
+<link href="../site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="../site_libs/grViz-binding-1.0.12/grViz.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="The Evidence-Based Digital Marketer">
+<meta property="og:description" content="Digital Campaign Strategy, Open Marketing Analytics, and Responsible AI for the Modern Marketing Professional">
+<meta property="og:image" content="https://mohammedalisharafuddin.github.io/digital-marketing-2026/chapters/week-07-ppc_files/figure-html/fig-match-type-spectrum-1.png">
+<meta property="og:site_name" content="The Evidence-Based Digital Marketer">
+<meta property="og:image:height" content="576">
+<meta property="og:image:width" content="1728">
+<meta name="twitter:title" content="The Evidence-Based Digital Marketer">
+<meta name="twitter:description" content="Digital Campaign Strategy, Open Marketing Analytics, and Responsible AI for the Modern Marketing Professional">
+<meta name="twitter:image" content="https://mohammedalisharafuddin.github.io/digital-marketing-2026/chapters/week-07-ppc_files/figure-html/fig-match-type-spectrum-1.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="576">
+<meta name="twitter:image-width" content="1728">
+</head>
+
+<body class="nav-sidebar floating fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/week-06-seo.html">Acquisition Channels</a></li><li class="breadcrumb-item"><a href="../chapters/week-07-ppc.html"><span class="chapter-title">Week 7: Paid Search and PPC</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">The Evidence-Based Digital Marketer</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/MohammedAliSharafuddin/digital-marketing-2026" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Evidence-Based Digital Marketer</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/copyright-and-licence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright and Licence</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/accessibility-statement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Accessibility Statement</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/author-note.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Author Note</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/programme-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programme Design</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Foundations and Planning</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-01-digital-population.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 1: The Digital Population</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-01-tutorial.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 1 Tutorial: Evidence, Persona, and Media Plan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-01-independent-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 1 Independent Study and Submission</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-02-planning-classic-digital.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 2: Linking Classic and Digital Marketing Planning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-02-tutorial.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 2 Tutorial: Positioning and Planning Canvas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-02-independent-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 2 Independent Study and Submission</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Persuasive Content and Media</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-03-persuasive-imagery.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 3: Persuasive Imagery and Visual Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-03-tutorial.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 3 Tutorial: Visual Asset Set</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-03-independent-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 3 Independent Study and Submission</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-04-messaging-wording.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 4: Messaging and Wording</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-04-tutorial.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 4 Tutorial: Copybook and Message Test Build</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-04-independent-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 4 Independent Study and Submission</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-05-display-youtube.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 5: Display Advertising and Video Formats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-05-tutorial.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 5 Tutorial: Targeting, Bids, and Placement Build</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-05-independent-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 5 Independent Study and Submission</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Acquisition Channels</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-06-seo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 6: Search Engine Optimisation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-06-tutorial.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 6 Tutorial: SEO Mini-Audit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-06-independent-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 6 Independent Study and Submission</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-07-ppc.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Week 7: Paid Search and PPC</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-07-tutorial.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 7 Tutorial: PPC Skeleton and Keyword Logic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-07-independent-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 7 Independent Study and Submission</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-08-social-media.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 8: Social Media Platforms and Theory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-08-tutorial.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 8 Tutorial: Ad Formats and Creative Hub</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/week-08-independent-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 8 Independent Study: Social Content Pack</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Slides</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/lecture-slides.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lecture Slides</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/week-06-seo.html">Acquisition Channels</a></li><li class="breadcrumb-item"><a href="../chapters/week-07-ppc.html"><span class="chapter-title">Week 7: Paid Search and PPC</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Week 7: Paid Search and PPC</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Your Week 6 SEO audit gave you a keyword list and an intent classification. Organic ranking still takes months to arrive, even when every on-page signal is correct, and a new competitor could launch a paid search campaign tomorrow and occupy the top of the results page before your content ever climbs there.</p>
+<p>Paid search closes that gap. Bid on the right query at the right price and your ad occupies that first sponsored slot on the day the campaign launches. The trade-off is cost: visibility lasts only as long as the budget runs, and every click costs money whether the searcher converts or leaves.</p>
+<p>Three disciplines decide whether that spend is efficient. Match type logic determines who the ad reaches. A negative keyword list blocks the searches you never wanted to pay for. And a Quality Score rewards a relevant ad and a fast landing page with a lower price for the same position. Master those three and paid search delivers Conviction-stage audiences to a well-designed landing page at a predictable cost per acquisition.</p>
+<p>This week’s learning design allocates nine hours to the topic: a one-hour lecture, a two-hour tutorial, and six hours of self-directed study. The artefact you produce is a PPC skeleton: a campaign structure with keyword groups, match types, negative keywords, responsive search ad copy, and a landing page audit, ready for a campaign manager to launch.</p>
+<p>Your Week 6 keyword research is the starting point. You already know the intent type, the search volume, and the competitive landscape for your primary terms. This week adds match type logic and bid structure on top of that research.</p>
+<section id="this-weeks-lecture" class="level2">
+<h2 class="anchored" data-anchor-id="this-weeks-lecture">This Week’s Lecture</h2>
+<div class="lp-header lecture">
+<p><span class="lp-type">Lecture</span> <strong>Paid Search and PPC</strong> <span class="lp-meta">1 hour · 4 activities</span></p>
+</div>
+<div class="lp-grid lp-4">
+<div class="lp-card lecture">
+<p><span class="badge bg-discussion">Discussion</span></p>
+<p><strong><span class="act-num">1</span> Introduction &amp; Recall</strong></p>
+<p><span class="act-time">⏱ 10 min</span></p>
+<p>Aims; poll on match types, negatives, and Quality Score levers.</p>
+</div>
+<div class="lp-card lecture">
+<p><span class="badge bg-acquisition">Acquisition</span></p>
+<p><strong><span class="act-num">2</span> PPC Foundations</strong></p>
+<p><span class="act-time">⏱ 30 min</span></p>
+<p>Query to auction; match types and negatives; Quality Score; bidding models and budget caps; audience overlays; conversion metrics; scheduling and rotation; reporting basics.</p>
+</div>
+<div class="lp-card lecture">
+<p><span class="badge bg-practice">Practice</span></p>
+<p><strong><span class="act-num">3</span> Guided Whole-Class Discussion</strong></p>
+<p><span class="act-time">⏱ 15 min</span></p>
+<p>Mini case: pick a match type and one negative keyword; propose one Quality Score fix and one safeguard; choose a primary metric.</p>
+</div>
+<div class="lp-card lecture">
+<p><span class="badge bg-assessment">Assessment</span></p>
+<p><strong><span class="act-num">4</span> Attendance &amp; Exit Check</strong></p>
+<p><span class="act-time">⏱ 5 min</span></p>
+<p>One-minute exit check: state one safeguard you will apply and why.</p>
+</div>
+</div>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>After studying this chapter, you should be able to:</p>
+<ol type="1">
+<li>Explain how the Google Ads auction determines ad position using bid, Quality Score, and expected impact of extensions.</li>
+<li>Apply keyword match type logic to build a keyword list that targets the right audience intent while protecting budget from irrelevant queries.</li>
+<li>Write a set of negative keywords that protect the campaign from irrelevant traffic.</li>
+<li>Structure a responsive search ad with 6 to 8 headline variants and 4 description variants aligned to the target keyword’s intent.</li>
+<li>Audit a landing page against the four tests that decide whether it converts the Conviction-stage audience paid search delivers: claim match, mobile speed, a single call to action, and message match.</li>
+<li>Calculate and interpret the primary PPC efficiency metrics: click-through rate, conversion rate, cost per click, and cost per acquisition.</li>
+<li>Apply the evidence framework to PPC decisions: classify keyword choices, bid strategy, and landing page decisions as evidence-based, inferred, or assumed.</li>
+</ol>
+</section>
+<section id="lecture-paid-search-and-ppc-1-hour" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="lecture-paid-search-and-ppc-1-hour">Lecture: Paid Search and PPC (1 Hour)</h2>
+<p>Bring your Week 6 SEO mini-audit to this session. The tutorial task builds your PPC skeleton directly from the keyword research it already contains.</p>
+</section>
+<section id="why-the-auction-rewards-relevance-over-raw-spend" class="level2">
+<h2 class="anchored" data-anchor-id="why-the-auction-rewards-relevance-over-raw-spend">Why the Auction Rewards Relevance Over Raw Spend</h2>
+<p>Paid search advertising on major platforms runs a real-time auction every time a user searches. That auction decides which ads appear, in what order, and at what cost to the advertiser. A higher bid only sometimes buys a higher position, and a modest bid on a genuinely relevant ad regularly beats a large bid on a poor one. Understanding why is the foundation of efficient PPC management.</p>
+<p>The auction combines two inputs: the advertiser’s maximum bid (the ceiling they will pay for a click) and Quality Score (a composite measure of the ad’s relevance to the query, its expected click-through rate, and the quality of the landing page it sends traffic to). Multiplying these two produces Ad Rank, the value that decides position. An advertiser with a maximum bid of MVR 5 and a Quality Score of 8 produces an Ad Rank of 40. An advertiser with a maximum bid of MVR 8 and a Quality Score of 4 produces an Ad Rank of 32. The lower bidder wins the better position because their Quality Score carries more weight than the extra money the other advertiser was willing to spend.</p>
+<p>That multiplication has a direct financial consequence. A campaign with a Quality Score of 7 or above pays less per click for an equivalent position than a campaign with a Quality Score of 4. Improving Quality Score by improving ad relevance and landing page quality is an efficiency strategy as much as a quality one.</p>
+<p>Quality Score is calculated across three components, each scored as above average, average, or below average: expected click-through rate (whether the ad is likely to earn more or fewer clicks than similar ads for the same keyword), ad relevance (how closely the ad copy matches the keyword’s intent), and landing page experience (how relevant, useful, and fast the destination page is).</p>
+<p>This design is deliberate, and it has a documented economic logic behind it. Search platforms run what economists call a position auction, analysed independently by <span class="citation" data-cites="edelman2007internet">Edelman, B., Ostrovsky, M., and Schwarz, M. (<a href="../references.html#ref-edelman2007internet" role="doc-biblioref">, 2007</a>)</span> and <span class="citation" data-cites="varian2007position">Varian, H. R. (<a href="../references.html#ref-varian2007position" role="doc-biblioref">, 2007</a>)</span>: advertisers compete for a ranked set of slots, and the winner pays a price derived from the bid below theirs rather than their own bid. Two findings from that literature explain the behaviour you will see in your own campaign. First, because you pay a price set by your competitor’s bid, bidding above what a click is genuinely worth to you buys position while destroying margin. Second, weighting the auction by a quality signal rather than by money alone serves the platform’s own interest: an irrelevant ad that nobody clicks earns the platform nothing per impression, so relevance and revenue point the same way. Quality Score is that weighting, made visible to you as a diagnostic.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Theory-to-decision bridge">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Theory-to-decision bridge
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Because Quality Score multiplies the bid rather than sitting alongside it, a low score amplifies every rufiyaa you spend to compensate. Before raising a bid, check whether the Quality Score components are below average first: improving ad relevance and landing page quality is usually the cheaper route to the same position, and raising the bid on a low-scoring campaign is the expensive one.</p>
+</div>
+</div>
+<div id="fig-adrank-formula" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-adrank-formula-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><span class="math display">\[\text{Ad Rank} = \text{Max Bid} \times \text{Quality Score} \;(+\; \text{expected impact of extensions})\]</span></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-adrank-formula-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The Ad Rank formula. Max Bid is the maximum cost-per-click you are willing to pay; Quality Score (1-10) combines ad relevance, expected CTR, and landing page experience. Extensions add a further lift, covered later in this chapter. Work with the bid-times-Quality-Score core for every calculation in this week’s tutorial: Quality Score multiplies the bid, so improving ad relevance and landing page quality is often a cheaper route to a better position than raising the bid.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="keyword-match-types" class="level2">
+<h2 class="anchored" data-anchor-id="keyword-match-types">Keyword Match Types</h2>
+<p>Keyword match types set how closely a searcher’s query must match your keyword before the ad fires. Google Ads offers three, with equivalents on other platforms: broad match, phrase match, and exact match.</p>
+<p><strong>Broad match</strong> serves the ad for searches that include variations, synonyms, and related topics of the keyword, well beyond the literal phrase. A broad match keyword “guesthouse Maldives” can trigger for searches including “budget hotel Maldives”, “backpacker hostel Maldives”, or “Maldives resort deals”. Broad match delivers the widest reach and the highest volume of irrelevant queries alongside it, so it demands active negative keyword management and suits campaigns with the budget to absorb some waste while they discover new terms.</p>
+<p><strong>Phrase match</strong> serves the ad for searches that keep the keyword phrase, or a close variant, in order, while allowing extra words before or after. A phrase match keyword “guesthouse Maldives” triggers for “guesthouse Maldives Malé” or “affordable guesthouse Maldives”, but skips “Maldives guesthouse deals” because the word order breaks. Phrase match sits between broad and exact on both reach and relevance.</p>
+<p><strong>Exact match</strong> serves the ad only for searches matching the keyword or a close variant, including misspellings, plurals, and implied words. An exact match keyword [guesthouse Maldives] triggers for “guesthouse Maldives” or “guesthouses Maldives”, but skips “guesthouse Maldives Malé” because the extra word falls outside the close-variant rule. Exact match delivers the tightest relevance and the smallest reach.</p>
+<p>A well-structured PPC campaign mixes all three deliberately: exact match for high-priority, high-intent keywords where relevance matters most; phrase match for mid-tail terms where some variation is acceptable; and broad match, backed by a strong negative keyword list, where the goal is discovering new relevant queries worth promoting to the exact match list.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-match-type-spectrum" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-match-type-spectrum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="week-07-ppc_files/figure-html/fig-match-type-spectrum-1.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-match-type-spectrum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The keyword match type spectrum. Moving from broad to exact reduces audience reach and increases search intent specificity. Campaign efficiency typically improves with tighter match types, at the cost of volume.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Free Tool: Google Ads Transparency Center">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Free Tool: Google Ads Transparency Center
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://adstransparency.google.com/">Google Ads Transparency Center</a> lets you search and view every active Google Search, Display, and YouTube ad run by any advertiser, anywhere in the world. It needs no account.</p>
+<p><strong>What it does in this chapter:</strong> Before building your PPC skeleton, search for your direct competitors here. You can see which keywords they are targeting (inferred from ad headlines), the claims their copy makes, and how their calls to action compare with your planned messaging. This competitive intelligence feeds directly into your keyword list and responsive search ad headline variants.</p>
+<p><strong>No account needed:</strong> Open the URL, search any advertiser name or topic, and browse all active ads immediately.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/screenshots/google-ads-transparency.png" class="img-fluid figure-img" style="width:90.0%" alt="Screenshot of Google Ads Transparency Center displaying active search ads with advertiser details, ad copy, and impression data."></p>
+<figcaption>Screenshot of Google Ads Transparency Center showing competitor ad headlines, descriptions, and targeting information.</figcaption>
+</figure>
+</div>
+<p><strong>Where you use it:</strong> in your independent study, when you build the two RSA variants (submission item 5). Search two direct competitors, record their headline patterns, primary claims, and calls to action, then flag any gap between their claims and yours in either direction and use it to differentiate your own headlines. It also feeds Forum 1 in the tutorial brief, which asks you to analyse a live sponsored result.</p>
+</div>
+</div>
+</section>
+<section id="negative-keywords" class="level2">
+<h2 class="anchored" data-anchor-id="negative-keywords">Negative Keywords</h2>
+<p>Negative keywords stop the ad firing when a search contains a term you have excluded. They are the single most important budget protection mechanism in PPC management. A campaign that launches without a negative keyword list burns a real share of its budget on clicks from searches that have nothing to do with the offering.</p>
+<p>Two sources feed the list. Anticipation covers the queries you already know will misfire, such as “free”, “jobs”, “internship”, “DIY”, or “Wikipedia” for a paid programme campaign. Search query data covers the queries that actually triggered the ad once the campaign has run for a while, surfacing mismatches nobody anticipated. Use both: anticipation catches the obvious gaps before launch, and the query report catches the ones only real traffic reveals.</p>
+<p>For a guesthouse direct-booking campaign, the anticipation list would include “free”, “hostel”, “backpacker”, “dorm”, “jobs”, and “Wikipedia”, alongside any other term likely to attract searchers who were never considering a paid stay. Two weeks into the campaign, the search query report would surface further candidates from the queries the ad actually matched.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Theory-to-decision bridge">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Theory-to-decision bridge
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Every unfiltered broad or phrase match keyword is an open door to queries you never intended to pay for. Build the anticipation list before launch, since the time it costs is recovered many times over in clicks you never pay for, then review the search query report weekly for the first month and add to the list after each review.</p>
+</div>
+</div>
+</section>
+<section id="responsive-search-ads" class="level2">
+<h2 class="anchored" data-anchor-id="responsive-search-ads">Responsive Search Ads</h2>
+<p>Responsive search ads (RSAs) let the advertiser supply up to fifteen headline variants (30 characters each) and four description variants (90 characters each). The platform’s machine learning system tests combinations of these elements and shifts delivery toward the combinations producing the highest click-through rate for each query and user context.</p>
+<p>Write every headline and description to stand on its own. A headline reading “With House Reef Access” only makes sense paired with “Tidewood Guesthouse Maldives”; if the system pairs it with something else instead, the ad reads as a fragment. Each element needs its own independent claim.</p>
+<p>Headline position matters most for the first three slots. The first headline should carry the target keyword or the primary campaign claim. The second should carry the strongest differentiator. The third should carry a call to action, a trust signal, or a supporting claim. The remaining headlines are rotation variants the system tests against each other.</p>
+<p>The four description lines (90 characters each) carry the argument the headline opens. The first should expand the primary claim with a specific, verifiable differentiator. The second should supply evidence or a call to action that reinforces the first. The remaining two are rotation variants, written to the same standard.</p>
+<section id="pinning-and-why-to-use-it-sparingly" class="level3">
+<h3 class="anchored" data-anchor-id="pinning-and-why-to-use-it-sparingly">Pinning, and why to use it sparingly</h3>
+<p>By default the system is free to place any headline in any position and to leave any asset out of a given combination. Pinning overrides that: pin a headline to position 1 and it appears in position 1 every time the ad serves, or it fails to serve at all.</p>
+<p>Pinning buys certainty and costs learning. A legal disclaimer, a regulated price claim, or a brand name that has to lead is worth pinning. Pin most of the set, though, and you collapse the number of combinations the machine learning can test, which is the entire mechanism that lifts click-through rate over time. The working compromise is to build two ad variants and leave at least one of them completely unpinned, so the system has a free hand to find combinations you would never have written yourself. Your Week 7 submission asks for exactly that: two RSA variants, at least one of them unpinned.</p>
+</section>
+</section>
+<section id="ad-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="ad-extensions">Ad Extensions</h2>
+<p>Extensions (Google Ads now calls them assets) sit below the headline and description and expand how much of the results page your ad occupies, at no extra cost per click. Sitelinks add links to specific pages such as room types or guest reviews. Callouts add short non-clickable phrases such as “No booking fees”. Structured snippets list features under a header such as “Amenities”. Call and location extensions surface a phone number and a map pin.</p>
+<p>Extensions matter to the auction as well as to the reader, which is why the full Ad Rank calculation includes an expected impact of extensions alongside bid and Quality Score. Relevant extensions raise Ad Rank without raising the bid, so they improve position efficiency directly. They also enlarge the ad, and a larger ad tends to earn a higher click-through rate, which feeds the expected CTR component of Quality Score in turn.</p>
+</section>
+<section id="landing-page-design-for-ppc" class="level2">
+<h2 class="anchored" data-anchor-id="landing-page-design-for-ppc">Landing Page Design for PPC</h2>
+<p>A click only starts the conversion process. What happens next, on the landing page, decides whether that click-through rate ever becomes a conversion rate. A page that is irrelevant to the ad, slow to load, or vague about its call to action wastes the entire cost of the click that reached it.</p>
+<p>Four tests decide whether a landing page is ready to receive paid traffic. It must match the ad’s specific claim: a page promoting the property in general when the ad promised house reef access produces a high bounce rate as visitors conclude they landed somewhere else. It must load in under three seconds on mobile, since each additional second of load time measurably raises bounce rate. It must present a single, clear call to action above the fold, visible before the visitor scrolls. And its headline should echo the ad’s headline, confirming to the visitor that they arrived exactly where they expected.</p>
+<p>The landing page is also a Quality Score input. A page that matches the keyword and the ad, loads fast, and serves the visitor well earns a higher Quality Score, which lowers the cost per click for the same ad position.</p>
+<p>That gives the Week 6 audit a second commercial life. The same page you audited for organic ranking now sits inside the auction: run it through the SEOmator audit or PageSpeed Insights again, and read the speed and mobile findings as Quality Score evidence over ranking evidence. A slow page cost you position in the organic results; here it costs you money on every click.</p>
+</section>
+<section id="ppc-efficiency-metrics" class="level2">
+<h2 class="anchored" data-anchor-id="ppc-efficiency-metrics">PPC Efficiency Metrics</h2>
+<p>Four metrics decide whether a PPC campaign performs efficiently: click-through rate (CTR), conversion rate, cost per click (CPC), and cost per acquisition (CPA).</p>
+<p><strong>Click-through rate</strong> is the share of ad impressions that earn a click. A CTR well below the category average signals a relevance problem: the ad is appearing for queries where it fails to earn interest. Benchmark CTR for search advertising varies by category but typically falls between 2 and 10 per cent; a CTR under 1 per cent usually points to a keyword-ad mismatch.</p>
+<p><strong>Conversion rate</strong> is the share of landing page visits that complete the desired action, whether that is a form submission, a booking enquiry, a purchase, or a download. A high CTR paired with a low conversion rate points to a landing page problem rather than an ad problem: the ad is earning clicks the page then fails to convert. Reading both metrics together is what makes the diagnosis possible.</p>
+<p><strong>Cost per click</strong> is the average amount paid per click, set by the auction: the bid, the Quality Score, and the competitor activity in that same auction at that same moment. CPC on its own says little; it only becomes meaningful alongside the conversion rate and the value of the conversion it produces.</p>
+<p><strong>Cost per acquisition</strong> is total campaign spend divided by conversions, and it is the metric that ties the other three together: CPA equals CPC divided by conversion rate. A CPA below the value of the conversion signals a profitable campaign. A CPA above that value signals an unprofitable one, however low the CPC looks in isolation.</p>
+<p>A fifth metric appears once revenue enters the picture. <strong>Return on ad spend (ROAS)</strong> is revenue divided by ad spend, expressed as a multiple: MVR 40,000 of bookings from MVR 10,000 of spend is a ROAS of 4.0x. A ROAS of 1.0x means the campaign recovered exactly what it cost in revenue, before the cost of actually delivering the product. Whether a given ROAS is healthy depends on your margin, so read it alongside CPA rather than in place of it. The interactive calculator below projects both from the same inputs.</p>
+<p><a href="#tbl-ppc-metrics" class="quarto-xref">Table&nbsp;<span>1</span></a> summarises the four primary metrics and what each one diagnoses.</p>
+<div class="cell">
+<div id="tbl-ppc-metrics" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ppc-metrics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: PPC efficiency metrics: definitions, benchmarks, and diagnostic implications
+</figcaption>
+<div aria-describedby="tbl-ppc-metrics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 20%">
+<col style="width: 31%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Definition</th>
+<th style="text-align: left;">Problem it diagnoses</th>
+<th style="text-align: left;">Primary lever for improvement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Click-through rate (CTR)</td>
+<td style="text-align: left;">Clicks divided by impressions, expressed as a percentage</td>
+<td style="text-align: left;">Low CTR points to a keyword-ad relevance mismatch or a low Quality Score</td>
+<td style="text-align: left;">Improve ad relevance to keyword; test headline variants; refine match types</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Conversion rate</td>
+<td style="text-align: left;">Conversions divided by clicks, expressed as a percentage</td>
+<td style="text-align: left;">Low conversion rate points to a landing page problem or an audience intent mismatch</td>
+<td style="text-align: left;">Improve landing page relevance, speed, and call to action; refine targeting</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cost per click (CPC)</td>
+<td style="text-align: left;">Total spend divided by total clicks</td>
+<td style="text-align: left;">High CPC points to a low Quality Score, high competition, or overbidding for the position</td>
+<td style="text-align: left;">Improve Quality Score; use more specific long-tail keywords; refine negative keywords</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cost per acquisition (CPA)</td>
+<td style="text-align: left;">Total spend divided by total conversions</td>
+<td style="text-align: left;">High CPA points to a campaign generating conversions inefficiently relative to spend</td>
+<td style="text-align: left;">Address the root cause: a low CTR calls for fixing the ad, a low conversion rate for fixing the landing page</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div id="fig-cpa-diagnostic" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cpa-diagnostic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-a37d5e14dce4bdaafc17" style="width:100%;height:345.6px;"></div>
+<script type="application/json" data-for="htmlwidget-a37d5e14dce4bdaafc17">{"x":{"diagram":"\n  digraph cpa_diag {\n    graph [rankdir=LR, fontname=\"Arial\", bgcolor=\"white\",\n           nodesep=0.5, ranksep=0.75, pad=0.4]\n    node [fontname=\"Arial\", fontsize=28, margin=\"0.30,0.20\",\n          penwidth=0, shape=box, height=1.4]\n    edge [fontname=\"Arial\", fontsize=18, color=\"#4a7fb5\",\n          penwidth=1.6, arrowsize=0.8]\n\n    start [label=\"CPA too high\",      fillcolor=\"#002147\", fontcolor=\"white\"]\n    q1    [label=\"CTR low?\",          fillcolor=\"#0063b2\", fontcolor=\"white\"]\n    q2    [label=\"Conversion\nrate low?\", fillcolor=\"#0063b2\", fontcolor=\"white\"]\n    q3    [label=\"Both acceptable?\",  fillcolor=\"#4a9edd\", fontcolor=\"white\"]\n\n    f1 [label=\"Fix the ad\nImprove keyword-ad\nrelevance; test headlines\",\n        fillcolor=\"#a8c8e3\", fontcolor=\"#002147\"]\n    f2 [label=\"Fix the page\nImprove relevance, speed,\nand call to action\",\n        fillcolor=\"#a8c8e3\", fontcolor=\"#002147\"]\n    f3 [label=\"Review CPA target\nIs the conversion value\ncorrectly estimated?\",\n        fillcolor=\"#edf1f7\", fontcolor=\"#002147\"]\n\n    start -> q1\n    q1    -> f1 [label=\"Yes\"]\n    q1    -> q2 [label=\"No\"]\n    q2    -> f2 [label=\"Yes\"]\n    q2    -> q3 [label=\"No\"]\n    q3    -> f3 [label=\"Yes\"]\n  }\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cpa-diagnostic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: CPA diagnostic decision tree. High CPA has two possible root causes: low CTR (an ad problem) or a low conversion rate (a page problem). Diagnosing the correct cause before making changes avoids fixing the wrong element.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Interactive Lab: Campaign ROAS Calculator">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Interactive Lab: Campaign ROAS Calculator
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use this calculator to explore how your CPC and conversion rate assumptions affect campaign profitability. Enter the campaign budget, expected CPC, and conversion rate from your PPC skeleton. At what budget does your campaign break even?</p>
+<p><strong>Tutorial link:</strong> Supports Activity 4 (Metrics &amp; Safeguards): enter the CPC estimate and conversion value from that activity’s table to sense-check whether your CPA target is reachable at your daily budget.</p>
+<p><strong>IS link:</strong> Supports submission item 8, the CPA target calculation, and gives you the ROAS figure to cite alongside it.</p>
+<pre class="shinylive-r" data-engine="r"><code>#| '!! shinylive warning !!': |
+#|   shinylive does not work in self-contained HTML documents.
+#|   Please set `embed-resources: false` in your metadata.
+#| standalone: true
+#| viewerHeight: 520
+#| components: [viewer]
+
+library(shiny)
+library(bslib)
+
+ui &lt;- page_fluid(
+  h5("Campaign ROAS Calculator", style = "color:#002147; margin-bottom:16px;"),
+  layout_columns(
+    col_widths = c(4, 8),
+    card(
+      card_header("Inputs"),
+      sliderInput("budget", "Campaign budget (MVR)",
+                  min = 1000, max = 200000, value = 20000, step = 500, sep = ","),
+      sliderInput("cpc", "Target CPC (MVR)",
+                  min = 0.5, max = 50, value = 5.0, step = 0.5),
+      sliderInput("cvr", "Landing page conversion rate (%)",
+                  min = 0.1, max = 20, value = 4.0, step = 0.1),
+      sliderInput("aov", "Average order value (MVR)",
+                  min = 100, max = 20000, value = 1500, step = 100, sep = ",")
+    ),
+    card(
+      card_header("Projections"),
+      layout_columns(
+        col_widths = c(6, 6),
+        value_box(title = "Estimated clicks",
+                  value = textOutput("clicks"), theme = "primary"),
+        value_box(title = "Estimated conversions",
+                  value = textOutput("convs"), theme = "info")
+      ),
+      layout_columns(
+        col_widths = c(6, 6),
+        value_box(title = "Cost per acquisition",
+                  value = textOutput("cpa"), theme = "warning"),
+        value_box(title = "ROAS",
+                  value = textOutput("roas"), theme = "success")
+      ),
+      plotOutput("bar_chart", height = "200px")
+    )
+  )
+)
+
+server &lt;- function(input, output, session) {
+  vals &lt;- reactive({
+    clicks &lt;- floor(input$budget / input$cpc)
+    convs  &lt;- floor(clicks * (input$cvr / 100))
+    rev    &lt;- convs * input$aov
+    cpa    &lt;- if (convs &gt; 0) input$budget / convs else Inf
+    roas   &lt;- if (input$budget &gt; 0) rev / input$budget else 0
+    list(clicks = clicks, convs = convs, rev = rev, cpa = cpa, roas = roas)
+  })
+
+  fmt &lt;- function(x) formatC(round(x), format = "f", digits = 0, big.mark = ",")
+
+  output$clicks &lt;- renderText(fmt(vals()$clicks))
+  output$convs  &lt;- renderText(fmt(vals()$convs))
+  output$cpa    &lt;- renderText(
+    if (is.infinite(vals()$cpa)) "No conv." else paste0("MVR ", fmt(vals()$cpa)))
+  output$roas   &lt;- renderText(sprintf("%.2fx", vals()$roas))
+
+  output$bar_chart &lt;- renderPlot({
+    v &lt;- vals()
+    items &lt;- c("Budget (MVR)", "Revenue (MVR)")
+    amts  &lt;- c(input$budget, v$rev)
+    cols  &lt;- c("#4a9edd", if (v$roas &gt;= 1) "#002147" else "#cc3333")
+    par(mar = c(3, 7, 1, 1), bg = "white")
+    bp &lt;- barplot(amts, names.arg = items, horiz = TRUE,
+                  col = cols, border = NA, las = 1, xlab = "MVR")
+    text(amts, bp, labels = paste0("MVR ", fmt(amts)),
+         pos = 4, cex = 0.85, col = "#333333")
+  })
+}
+
+shinyApp(ui, server)</code></pre>
+</div>
+</div>
+</section>
+<section id="worked-example-ppc-skeleton-for-tidewood-guesthouse" class="level2">
+<h2 class="anchored" data-anchor-id="worked-example-ppc-skeleton-for-tidewood-guesthouse">Worked Example: PPC Skeleton for Tidewood Guesthouse</h2>
+<p>The Week 6 SEO audit built its keyword cluster around “best guesthouse Maldives house reef access” as the primary term, with “affordable guesthouse Maldives snorkelling” and “guesthouse vs resort Maldives price” as support terms. That same cluster becomes the foundation of the PPC campaign: the audience already searching those terms is close to a booking decision, and paid search can put Tidewood in front of them immediately while the SEO content is still climbing the rankings.</p>
+<p>The campaign structure has one campaign (“Tidewood Direct Book 2026”), one ad group (“House Reef Snorkelling Malé”), and a keyword list of five terms: the exact match [best guesthouse maldives house reef access], two phrase matches “affordable guesthouse maldives snorkelling” and “guesthouse vs resort maldives price”, and two broad matches carrying negative keyword protection, “guesthouse maldives” and “budget accommodation maldives”. The negative keyword list runs to thirteen terms, comfortably above the ten-term minimum: “free”, “hostel”, “backpacker”, “dorm”, “jobs”, “internship”, “salary”, “what is a guesthouse”, “Wikipedia”, “Airbnb”, “Booking.com”, “TripAdvisor”, and “resort”.</p>
+<p>The responsive search ad headlines include “Tidewood Guesthouse Maldives” (keyword-matched, 28 characters), “House Reef, No Boat Needed” (primary differentiator, 26), “Priced Below Nearby Resorts” (comparison claim, 27), “Book Direct, No Booking Fees” (call to action, 28), “International Guests Welcome” (audience signal, 28), and “Check September Availability” (urgency, 28) as a sixth rotation variant. Every one sits inside the 30-character limit, and every one states a complete claim without leaning on another headline. The four descriptions expand the house-reef claim, the price comparison against resorts, the direct-booking saving, and the September availability call to action, each within 90 characters.</p>
+<p>The landing page then gets audited against the four tests. Claim match passes: the page headline echoes “Tidewood Guesthouse: House-Reef Snorkelling at a Fraction of Resort Prices”, and the house-reef claim runs as the first body paragraph. The single call to action passes: one two-field booking enquiry form (name and email) with a “Check availability” button, above the fold. Message match passes, since the page headline repeats the ad’s own words. Mobile speed fails at 4.1 seconds against the under-3-second standard, so the fix list carries one item: compress the three guest testimonial photographs below the fold, which are the largest assets on the page.</p>
+<p>The budget plans for a CPC of MVR 15-25 (estimated from keyword competition level) at 50 clicks per week, with a CPA target of MVR 800 per booking enquiry against a conversion rate assumption of 5 per cent. That conversion rate assumption is labelled [ASSUMPTION] and gets revised once the first two weeks of campaign data arrive.</p>
+
+
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-edelman2007internet" class="csl-entry" role="listitem">
+Edelman, B., Ostrovsky, M., and Schwarz, M. (2007). <a href="https://doi.org/10.1257/aer.97.1.242">Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords</a>. American Economic Review.
+</div>
+<div id="ref-varian2007position" class="csl-entry" role="listitem">
+Varian, H. R. (2007). <a href="https://doi.org/10.1016/j.ijindorg.2006.10.002">Position auctions</a>. International Journal of Industrial Organization.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/mohammedalisharafuddin\.github\.io\/digital-marketing-2026");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/week-06-independent-study.html" class="pagination-link" aria-label="Week 6 Independent Study and Submission">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Week 6 Independent Study and Submission</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/week-07-tutorial.html" class="pagination-link" aria-label="Week 7 Tutorial: PPC Skeleton and Keyword Logic">
+        <span class="nav-page-text"><span class="chapter-title">Week 7 Tutorial: PPC Skeleton and Keyword Logic</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/MohammedAliSharafuddin/digital-marketing-2026/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
